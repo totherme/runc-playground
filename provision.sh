@@ -12,7 +12,7 @@ wget -qO- https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz | tar
 
 #Set up $GOPATH and add go executables to $PATH
 cat > /etc/profile.d/go_env.sh <<\EOF
-export GOPATH=/root/go
+export GOPATH=/vagrant/go
 export PATH=$GOPATH/bin:/usr/local/go/bin:$PATH
 EOF
 chmod +x /etc/profile.d/go_env.sh
